@@ -1,6 +1,5 @@
 package com.example.aidertestsam_android
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner

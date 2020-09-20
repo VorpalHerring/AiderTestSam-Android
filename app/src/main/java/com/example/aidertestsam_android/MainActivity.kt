@@ -3,8 +3,6 @@ package com.example.aidertestsam_android
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aidertestsam_android.Messages.RandomMessageSource
@@ -23,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val messageSource by viewModels<RandomMessageSource>();//ViewModelProvider(this).get(RandomMessageSource::class.java)
+        val messageSource by viewModels<RandomMessageSource>();
 
         viewManager = LinearLayoutManager(this)
         viewAdapter = MessageListAdapter(this, messageSource);
